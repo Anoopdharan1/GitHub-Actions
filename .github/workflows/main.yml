@@ -9,8 +9,7 @@
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: multi-line commands
+      - name: Execute Shell Script
         run: |
-          echo "GitHub Actions"
-          ls -ltrh
-          cat README.md
+            chmod +x script
+            ./script
