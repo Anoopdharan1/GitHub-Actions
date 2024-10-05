@@ -5,8 +5,12 @@
     first_job:
       runs-on: ubuntu-latest
       steps:
+
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
       - name: multi-line commands
         run: |
-          actions/checkout@v4
+          echo "GitHub Actions"
           ls -ltrh
           cat README.md
