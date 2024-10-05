@@ -1,3 +1,3 @@
 echo "GitHub Actions"
-ls -la
+ls -ltra
 cat README.md
