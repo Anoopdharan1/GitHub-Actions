@@ -7,3 +7,12 @@
       steps:
       - name: Welcome Message
         run: echo "Welcome to gitHub Actions"
+      
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: List Files
+        run: ls -la
+
+      - name: Open File
+        run: cat README.md
